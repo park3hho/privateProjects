@@ -1,0 +1,51 @@
+render_template <--> url_for() 차이
+render_template
+    Role: render HTML render_template
+    Place: Python
+
+
+URL 빌더(url_for)
+    Role: Generate URL
+    Place: Python, HTML
+    Character: 
+        유지보수성
+        명확성
+        유연성
+    Conjugation:
+        페이지 간 내비게이션
+        리디렉션
+        자동 URL 생성성
+    1. 기본 URL
+    2. 변수 URL
+    3. 정적 파일 URL
+    4. 절대 URL 
+    5. HTTPS 절대 URL
+
+타입힌팅 라우팅
+
+
+요청과 응답
+
+
+매크로
+    파이썬에서 함수 개념
+    index.html에서 인자("success")가 macros.html으로 넘어가 출력됨.
+        index.html
+            {% from "macros.html" import display_message %}
+            {{ display_message('success') }}
+        macros.html
+            {% macro display_message(message) %}
+            <p> {{message}} </p>
+            {% endmacro %}
+
+
+에러
+    Internal Server Error (500)
+        1. 경로 문제
+        2. Syntax 문제
+
+
+====================================
+가장 빠른 풀스택을 위한 Flask & FastAPI
+독학
+====================================
